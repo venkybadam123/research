@@ -1,0 +1,50 @@
+# This file is in YAML format.  You must ensure that the punctuation
+# and whitespace is preserved.  Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: A257
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: ['chilkamarrysaikiran', 'Sushma2579', 'Poornayaram123', 'venkybadam123']
+
+# Write your general topic.  
+topic: Analysis of Summer Olympics Data
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: Is there a significant relationship between total summer values and the number of games in the Summer Olympics?
+
+# Write your independent and dependent variables.  These should be the
+# column names (reported by R colnames()) where these variables are
+# found in your dataset's CSV file.
+independent-var:  total_summer
+dependent-var: no_games
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There is no significant relationship between total summer values and the number of games in the Summer Olympics.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There is a significant relationship between total summer values and the number of games in the Summer Olympics.
+
+# Write the dataset ID (KNNN):
+dataset-id: DS207
+
+# Write the dataset URL.  
+dataset-url: https://data.world/ian/olympic-medals-host-cities/workspace/file?filename=Summer+Olympics+joined.csv
+
+# Write the dataset CSV filename, exactly as it appears on the Sharepoint list
+# (which should be the same as the one in your repository!)
+dataset-file: SummerOlympicsjoined.csv
+
+# Paste the output of loading your dataset into R, and executing the
+# colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+
+# Loading the dataset
+data <- read_csv("SummerOlympicsjoined.csv")
+
+# Printing data columns
+columns: colnames(data)
+  [1] "total_summer" "no_games" "no_hosted" "team"
